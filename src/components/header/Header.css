@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 20rem;
     overflow: hidden;
 }
 
@@ -9,6 +9,7 @@ header{
     text-align: center;
     height: 100%;
     position: relative;
+    width: 100%;
 }
 
 .cta{
@@ -43,17 +44,16 @@ header{
     transform: rotate(90deg);
     padding: 4px;
     font-weight: 500;
+    color: rgba(70,70,70,0.5);
 }
 
-/* Media querys (medium devices) */
+/* Media querys (very tiny devices lol) */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-height: 800px) {
+    header{
+        padding-top: 10rem;
+    }
 
    
 }
 
-/* Media querys (small devices) */
-
-@media screen and (max-width: 600px) {
-    
-}

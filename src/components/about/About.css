@@ -9,7 +9,8 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(45deg,transparent,var(--color-darkgray),transparent);
+    backdrop-filter: blur(25px);
+    background: rgba(0,0,0,0.6);
     display: grid;
     place-items: center;
     ;
@@ -36,3 +37,42 @@
     transform: translateY(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about__content p{
+        margin: 1rem 0 1.5;
+    }
+    
+
+   
+}
+
+@media screen and (max-width: 600px) {
+
+    .about__me{
+        width: 65%;
+        margin: 0 auto 3rem;
+
+
+    }
+
+    .about__content{
+        text-align: center;
+    }
+
+    .about__content p{
+        margin: 1.5rem;
+    }
+    
+
+   
+}

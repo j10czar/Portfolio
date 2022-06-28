@@ -44,7 +44,7 @@ header{
     transform: rotate(90deg);
     padding: 4px;
     font-weight: 500;
-    color: rgba(70,70,70,0.5);
+    color: rgba(70,70,70,0.3);
 }
 
 /* Media querys (very tiny devices lol) */

@@ -9,7 +9,8 @@ const About = () => {
       <h2>About Me</h2>
       <div className='container about_container'>
         <div className="about__me">
-          <div className='about__me-image'><img src={me} alt="About Image" className='imgadj' /></div>
+          <div className='about__me-image'><img src={me} alt="About Image" className='imgadj' /></div> {/* eslint-disable-line */}
+          
         </div>
 
         <div className='about__content'>

@@ -6,16 +6,40 @@ import {BiBook} from 'react-icons/bi'
 import {TbAppWindow} from 'react-icons/tb'
 import {BiMessageRoundedDetail} from 'react-icons/bi'
 import {useState} from 'react'
+import { useScrollPosition } from '../../useScrollPosition'
+
 const Nav = () => {
 
   const [activeNav, setActiveNav] = useState('#')
+
+  const scrollPosition= useScrollPosition()
+  console.log(scrollPosition)
+
+    if(scrollPosition<100&&activeNav!=='#')
+    {
+      setActiveNav('#')
+    }
+    else if(scrollPosition>450&&scrollPosition<1519&&activeNav!=='#about'){
+      setActiveNav('#about')
+    }
+    else if(scrollPosition>1520&&scrollPosition<1572&&activeNav!=='#experience'){
+      setActiveNav('#experience')
+    }
+    // else if(scrollPosition===3000){
+    //   setActiveNav('#portfolio')
+    // }
+    // else if(scrollPosition===4000)
+    // {
+    //   setActiveNav('#contact')
+    // }
+  
   return (
     <nav>
-      <a href='#' onClick={()=>setActiveNav('#')} className={activeNav=== '#' ? 'active' : ''}><BiHomeAlt/></a>
-      <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav=== '#about' ? 'active' : ''}><BiUser/></a>
-      <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav=== '#experience' ? 'active' : ''}><BiBook/></a>
-      <a href="#portfoilo" onClick={()=>setActiveNav('#portfolio')} className={activeNav=== '#portfolio' ? 'active' : ''}><TbAppWindow/></a>
-      <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav=== '#contact' ? 'active' : ''}><BiMessageRoundedDetail/></a>
+      <a href='#' onClick={()=>setActiveNav('#')} className={activeNav=== '#' ? 'active' : ''}><BiHomeAlt/></a> {/* eslint-disable-line */}
+      <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav=== '#about'? 'active' : ''}><BiUser/></a>
+      <a href="#experience" onClick={()=>setActiveNav('#experience')} className={activeNav=== '#experience'? 'active' : ''}><BiBook/></a>
+      <a href="#portfoilo" onClick={()=>setActiveNav('#portfolio')} className={activeNav=== '#portfolio'? 'active' : ''}><TbAppWindow/></a>
+      <a href="#contact" onClick={()=>setActiveNav('#contact')} className={activeNav=== '#contact'? 'active' : ''}><BiMessageRoundedDetail/></a>
     </nav>
   )
 }

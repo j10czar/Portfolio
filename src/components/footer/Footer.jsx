@@ -17,7 +17,7 @@ const Footer = () => {
 
 
       <div className="footer_socials">
-        <a href="https://github.com/j10czar"><SiGithub/></a>
+        <a href="https://github.com/j10czar/Portfolio"><SiGithub/></a>
       </div>
 
       <div className='footer_copyright'><small>&copy; Jason Tenczar. All rights reserved</small></div>

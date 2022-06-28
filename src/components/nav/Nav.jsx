@@ -13,7 +13,7 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
 
   const scrollPosition= useScrollPosition()
-  console.log(scrollPosition)
+
 
     if(scrollPosition<100&&activeNav!=='#')
     {
@@ -22,16 +22,16 @@ const Nav = () => {
     else if(scrollPosition>450&&scrollPosition<1519&&activeNav!=='#about'){
       setActiveNav('#about')
     }
-    else if(scrollPosition>1520&&scrollPosition<1572&&activeNav!=='#experience'){
+    else if(scrollPosition>1520&&scrollPosition<2391&&activeNav!=='#experience'){
       setActiveNav('#experience')
     }
-    // else if(scrollPosition===3000){
-    //   setActiveNav('#portfolio')
-    // }
-    // else if(scrollPosition===4000)
-    // {
-    //   setActiveNav('#contact')
-    // }
+    else if(scrollPosition>2550&&scrollPosition<3630&&activeNav!=='#portfolio'){
+      setActiveNav('#portfolio')
+    }
+    else if(scrollPosition>3650&&activeNav!=='#contact')
+    {
+      setActiveNav('#contact')
+    }
   
   return (
     <nav>

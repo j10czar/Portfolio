@@ -19,7 +19,6 @@
 .experience_container > div:hover{
     backdrop-filter: blur(50px);
     background: rgba(0,0,0,0.8);
-    border-width: 2px;
 }
 
 .experience_container > div h3{

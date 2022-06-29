@@ -28,13 +28,24 @@
 
 }
 
+
 .about__content p {
+    backdrop-filter: blur(25px);
+    background: rgba(0,0,0,0.6);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    padding: 1rem;
 
     position: relative;
     top: 40%;
     transform: translateY(-50%);
+}
+.about__content p:hover{
+    backdrop-filter: blur(50px);
+    background: rgba(0,0,0,0.8);
 }
 
 @media screen and (max-width: 1024px) {

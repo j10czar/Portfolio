@@ -6,7 +6,7 @@ import TicTac from '../../assets/TicTac.png'
 
 const Portfolio = () => {
   return (
-    <section id='portfoilo'>
+    <section id='portfoilo' className='iosfix2'>
       <h5>Some Recent Work</h5>
       <h2>My Projects</h2>
 
@@ -28,7 +28,7 @@ const Portfolio = () => {
             <img src={TicTac} alt="Tic Tac Toe" />
 
           </div>
-          <h3>Tic Tac Toe Game</h3>
+          <h3>Tic Tac Toe (in progress)</h3>
           <div className='portfolio_item-cta'>
             <a href="https://github.com/j10czar/TicTacToe" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
             <a href="https://j10czar.github.io/TicTacToe/" className='btn' target={'_blank'}>Live Demo</a> {/* eslint-disable-line */}
@@ -39,12 +39,13 @@ const Portfolio = () => {
             <img src={Messaging} alt="Group Messaging" />
 
           </div>
-          <h3>Local Group Messaging Application</h3>
+          <h3>Java Group Messaging Application</h3>
           <div className='portfolio_item-cta'>
               <a href="https://github.com/j10czar/GroupMessagingDemo" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
           </div>
         </article>
       </div>
+      <h5 className='many_more'>Many more projects to come!</h5>
     </section>
   )
 }

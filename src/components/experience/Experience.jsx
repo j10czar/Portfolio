@@ -77,6 +77,16 @@ const Experience = () => {
             </div>        
         </div>
       </div>
+      <div className='extra-accomplishments'>
+        <div className='accomplishments'>
+          <h3 className='acc_header'>Accomplishments</h3>
+          <h4>•Novice champion of the Lockheed Martin Code Quest competition</h4>
+          <br />
+          <h4>•Competed in the University of Central Florida’s high school programming tournament </h4>
+        </div>  
+
+      </div>
+      
     </section>
   )
 }

@@ -8,9 +8,12 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import BGvideo from './assets/BGvid2.mp4'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const App = () => {
+  AOS.init({duration:500});
 
 
 
@@ -21,10 +24,25 @@ const App = () => {
       </video>
       <Header/>
       <Nav />
-      <About/>
-      <Experience/>
-      <Portfolio/>
-      <Contact/>
+      <div data-aos="fade-up"
+     data-aos-duration="500">
+        <About/>
+
+      </div>
+      <div data-aos="fade-up"
+     data-aos-duration="500">
+        <Experience/>
+      </div>
+      <div data-aos="fade-up"
+     data-aos-duration="500">
+        <Portfolio/>
+      </div>
+
+      <div data-aos="fade-up"
+     data-aos-duration="500">
+        <Contact/>
+      </div>
+      
       <Footer/>
 
     </>

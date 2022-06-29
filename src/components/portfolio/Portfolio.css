@@ -39,6 +39,10 @@
 
 }
 
+.many_more{
+    margin-top: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
     .portfolio_container{
         grid-template-columns: 1fr 1fr;
@@ -53,5 +57,9 @@
     .portfolio_container{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .iosfix2{
+        margin-top: 25rem;
     }
 }

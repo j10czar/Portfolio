@@ -37,14 +37,20 @@ header{
     background: var(--color-pink);
 }
 
-.scroll__down{
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    padding: 4px;
-    font-weight: 500;
-    color: rgba(70,70,70,0.3);
+.scrolldown-s{
+    padding-top: 7rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.4);
+    transition: var(--transition);
+
+
+
+}
+
+
+
+.down_arrow{
+    font-size: 2rem;
 }
 
 /* Media querys (very tiny devices lol) */

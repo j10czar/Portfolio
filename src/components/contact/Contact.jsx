@@ -15,7 +15,7 @@ const Contact = () => {
       e.target.reset()
     };
   return (
-    <section id='contact' className='iosFix'>
+    <section id='contact'>
 
         <h5>Get In Touch</h5>
         <h2>Contact Me</h2>

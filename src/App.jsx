@@ -11,6 +11,8 @@ import BGvideo from './assets/BGvid2.mp4'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+//npm run deploy
+
 
 const App = () => {
   AOS.init({duration:500});

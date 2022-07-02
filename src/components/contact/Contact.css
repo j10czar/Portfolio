@@ -5,6 +5,9 @@
     gap: 12%;
 
 }
+.contactoverflowFix{
+    margin-top: 40rem;
+}
 .contact_options{
     display: flex;
     flex-direction: column;
@@ -78,9 +81,5 @@ input, textarea{
 
     .container.contact_container{
         width: var(--container-width-sm);
-    }
-
-    .iosFix{
-        margin-top: 40rem;
     }
 }

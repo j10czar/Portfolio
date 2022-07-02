@@ -16,6 +16,10 @@
     transition: var(--transition);
 }
 
+.exFix{
+    margin-bottom: 1rem;
+}
+
 .experience_container > div:hover{
     backdrop-filter: blur(50px);
     background: rgba(0,0,0,0.8);
@@ -113,6 +117,10 @@
 
     .accomplishments{
         margin: 1rem;
+    }
+
+    .exFix{
+        margin-bottom: 10rem;
     }
 
 

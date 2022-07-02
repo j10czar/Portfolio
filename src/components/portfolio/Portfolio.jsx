@@ -1,12 +1,13 @@
 import React from 'react'
 import './Portfolio.css'
-import BookTracker from '../../assets/BookTracker.png'
+import BookTracker from '../../assets/BookTrackerShowcase.png'
 import Messaging from '../../assets/Messaging.png'
 import TicTac from '../../assets/TicTac.png'
+import Monkey from '../../assets/MonkeyShowcase.png'
 
 const Portfolio = () => {
   return (
-    <section id='portfoilo' className='iosfix2'>
+    <section id='portfoilo' className='overflowFix'>
       <h5>Some Recent Work</h5>
       <h2>My Projects</h2>
 
@@ -44,8 +45,24 @@ const Portfolio = () => {
               <a href="https://github.com/j10czar/GroupMessagingDemo" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
           </div>
         </article>
+        <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={Monkey} alt="Infinite Monkey Theorem Simulator" />
+
+          </div>
+          <h3>Infinite Monkey Theorem Simulator</h3>
+          <div className='portfolio_item-cta'>
+              <a href="https://github.com/j10czar/InfiniteMonkeyTheoremSimulator" className='alt-btn' target={'_blank'}>Github</a>
+              <a href="https://j10czar.github.io/InfiniteMonkeyTheoremSimulator/" className='btn' target={'_blank'}>Live Demo</a> {/* eslint-disable-line */}
+          </div>
+        </article>
+          <div className='soon'>
+            <h3>Stay Tuned</h3>
+            <h5>Many more projects coming soon.</h5>
+
+          </div>
       </div>
-      <h5 className='many_more'>Many more projects to come!</h5>
+
     </section>
   )
 }

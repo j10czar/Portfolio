@@ -5,6 +5,10 @@
     gap: 2.5rem;
 }
 
+.overflowFix{
+    margin-bottom: 45rem;
+}
+
 .portfolio_item{
     backdrop-filter: blur(25px);
     background: rgba(0,0,0,0.6);
@@ -39,8 +43,10 @@
 
 }
 
-.many_more{
+.soon{
     margin-top: 2rem;
+    text-align: center;
+    padding-top: 10rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -59,7 +65,8 @@
         gap: 1rem;
     }
 
-    .iosfix2{
+    .overflowFix{
         margin-top: 25rem;
+        margin-bottom: 90rem;
     }
 }

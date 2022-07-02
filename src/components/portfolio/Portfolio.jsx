@@ -52,7 +52,7 @@ const Portfolio = () => {
           </div>
           <h3>Infinite Monkey Theorem Simulator</h3>
           <div className='portfolio_item-cta'>
-              <a href="https://github.com/j10czar/InfiniteMonkeyTheoremSimulator" className='alt-btn' target={'_blank'}>Github</a>
+              <a href="https://github.com/j10czar/InfiniteMonkeyTheoremSimulator" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
               <a href="https://j10czar.github.io/InfiniteMonkeyTheoremSimulator/" className='btn' target={'_blank'}>Live Demo</a> {/* eslint-disable-line */}
           </div>
         </article>

@@ -30,8 +30,14 @@
 }
 
 .portfolio_item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 0.5rem;
     
+}
+
+.portfolio_item>p{
+    color: var(--color-light);
+    font-weight: 500;
+
 }
 
 
@@ -40,6 +46,7 @@
     gap: 1rem;
 
     margin: 1rem;
+    margin-left: 0rem;
 
 }
 
@@ -68,5 +75,10 @@
     .overflowFix{
         margin-top: 25rem;
         margin-bottom: 90rem;
+    }
+
+    .soon{
+        padding-top: 1rem;
+        margin-top: 1rem;
     }
 }

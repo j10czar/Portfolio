@@ -40,6 +40,8 @@ const App = () => {
         <Portfolio/>
       </div>
 
+      <div className='ios-overflow'> </div>
+
       <div data-aos="fade-up"
      data-aos-duration="500">
         <Contact/>

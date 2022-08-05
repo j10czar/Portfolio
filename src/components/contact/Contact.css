@@ -5,9 +5,7 @@
     gap: 12%;
 
 }
-.contactoverflowFix{
-    margin-top: 40rem;
-}
+
 .contact_options{
     display: flex;
     flex-direction: column;

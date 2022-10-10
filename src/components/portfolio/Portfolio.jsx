@@ -5,6 +5,7 @@ import Messaging from '../../assets/messaging.png'
 import TicTac from '../../assets/tictactoe.png'
 import Monkey from '../../assets/monkey.png'
 import Nowe from '../../assets/nowe.png'
+import AiText from '../../assets/aitext.png'
 
 const Portfolio = () => {
   return (
@@ -14,6 +15,17 @@ const Portfolio = () => {
 
 
       <div className="container portfolio_container">
+      <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={AiText} alt="Group Messaging" />
+
+          </div>
+          <h3>Python AI Text Generator</h3>
+          <p>(Fall 2022)</p>
+          <div className='portfolio_item-cta'>
+              <a href="https://github.com/j10czar/AI-Text-Generator" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
+          </div>
+        </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={Nowe} alt="Nowe" />
@@ -54,7 +66,7 @@ const Portfolio = () => {
             <img src={TicTac} alt="Tic Tac Toe" />
 
           </div>
-          <h3>Tic Tac Toe (in progress)</h3>
+          <h3>Tic Tac Toe</h3>
           <p>(Spring 2022)</p>
           <div className='portfolio_item-cta'>
             <a href="https://github.com/j10czar/TicTacToe" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
@@ -73,11 +85,13 @@ const Portfolio = () => {
           </div>
         </article>
         
-          <div className='soon'>
+          
+      </div>
+
+      <div className='soon'>
             <h3>Stay Tuned</h3>
             <h5>Many more projects coming soon.</h5>
 
-          </div>
       </div>
 
     </section>

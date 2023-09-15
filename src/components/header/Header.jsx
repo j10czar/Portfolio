@@ -40,9 +40,9 @@ const Header = () => {
       <div className='container header__container'>
         <h5>Hi, im</h5>
         <h1>Jason</h1>
-        <h5 className='text-light'>Web Developer/CS Student</h5>
+        <h5 className='text-light'>CS / Information Systems Student</h5>
         <CTA/>
-        <HeaderSocials/>
+        <HeaderSocials/> 
         <div className='scrolldown-s' style={{opacity: opac}}><h5>Scroll Down</h5>
           <IoIosArrowDown className='down_arrow'/>
         </div>

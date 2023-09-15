@@ -1,7 +1,7 @@
 import React from 'react'
 import './Portfolio.css'
-import BookTracker from '../../assets/booktracker.png'
-import Messaging from '../../assets/messaging.png'
+import BookTracker from '../../assets/BookTracker.png'
+import Messaging from '../../assets/Messaging.png'
 import TicTac from '../../assets/tictactoe.png'
 import Monkey from '../../assets/monkey.png'
 import Nowe from '../../assets/nowe.png'
@@ -20,8 +20,8 @@ const Portfolio = () => {
             <img src={AiText} alt="Group Messaging" />
 
           </div>
-          <h3>Python AI Text Generator</h3>
-          <p>(Fall 2022)</p>
+          <h3>Python Simulated AI Text Generator</h3>
+          <p>(Spring 2023)</p>
           <div className='portfolio_item-cta'>
               <a href="https://github.com/j10czar/AI-Text-Generator" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
           </div>

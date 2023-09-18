@@ -17,6 +17,17 @@ const Portfolio = () => {
       <div className="container portfolio_container">
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
+            <img src={Nowe} alt="Nowe" />
+
+          </div>
+          <h3>Nowe - A Student Organization App</h3>
+          <p>(Fall 2023)</p>
+          <div className='portfolio_item-cta'>
+              <a href="https://j10czar.github.io/NoweForStudents/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
+          </div>
+        </article>
+      <article className='portfolio_item'>
+          <div className="portfolio_item-image">
             <img src={AiText} alt="Group Messaging" />
 
           </div>
@@ -24,17 +35,6 @@ const Portfolio = () => {
           <p>(Spring 2023)</p>
           <div className='portfolio_item-cta'>
               <a href="https://github.com/j10czar/AI-Text-Generator" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
-          </div>
-        </article>
-      <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={Nowe} alt="Nowe" />
-
-          </div>
-          <h3>Nowe - A Student Organization App</h3>
-          <p>(Summer 2022)</p>
-          <div className='portfolio_item-cta'>
-              <a href="https://j10czar.github.io/NoweForStudents/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
           </div>
         </article>
         <article className='portfolio_item'>

@@ -6,6 +6,7 @@ import TicTac from '../../assets/tictactoe.png'
 import Monkey from '../../assets/monkey.png'
 import Nowe from '../../assets/nowe.png'
 import AiText from '../../assets/aitext.png'
+import gatormacros from '../../assets/gatormacros.png'
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,17 @@ const Portfolio = () => {
 
 
       <div className="container portfolio_container">
+      <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={gatormacros} alt="GatorMacros" />
+
+          </div>
+          <h3>GatorMacros</h3>
+          <p id='gm'>(Spring 2024)</p>
+          <div className='portfolio_item-cta'>
+              <a href="https://gatormacros.com/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
+          </div>
+        </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={Nowe} alt="Nowe" />

@@ -8,6 +8,10 @@
 .overflowFix{
     margin-bottom: 45rem;
 }
+#gm{
+    margin-bottom: 64px;
+}
+
 
 .portfolio_item{
     backdrop-filter: blur(25px);

@@ -20,7 +20,7 @@ const Footer = () => {
         <a href="https://github.com/j10czar/Portfolio"><SiGithub/></a>
       </div>
 
-      <div className='footer_copyright'><small>&copy; 2022 Jason Tenczar. All rights reserved</small></div>
+      <div className='footer_copyright'><small>&copy; 2024 Jason Tenczar. All rights reserved</small></div>
     </footer>
   )
 }

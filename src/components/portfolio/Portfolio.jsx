@@ -7,6 +7,7 @@ import Monkey from '../../assets/monkey.png'
 import Nowe from '../../assets/nowe.png'
 import AiText from '../../assets/aitext.png'
 import gatormacros from '../../assets/gatormacros.png'
+import acm from '../../assets/acm.png'
 
 const Portfolio = () => {
   return (
@@ -18,7 +19,19 @@ const Portfolio = () => {
       <div className="container portfolio_container">
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={gatormacros} alt="GatorMacros" />
+            <img src={acm} alt="UF Association for Computing Machinery Overhaul" className='portfolio-img' />
+
+          </div>
+          <h3>UF ACM Website Overhaul</h3>
+          <p id='gm'>(Spring 2024)</p>
+          <div className='portfolio_item-cta'>
+             <a href="https://github.com/a1exanderklein/ACM-Website" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
+              <a href="https://uf-acm.com/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
+          </div>
+        </article>
+      <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={gatormacros} alt="GatorMacros" className='portfolio-img' />
 
           </div>
           <h3>GatorMacros</h3>
@@ -29,7 +42,7 @@ const Portfolio = () => {
         </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={Nowe} alt="Nowe" />
+            <img src={Nowe} alt="Nowe" className='portfolio-img' />
 
           </div>
           <h3>Nowe - A Student Organization App</h3>
@@ -40,7 +53,7 @@ const Portfolio = () => {
         </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={AiText} alt="Group Messaging" />
+            <img src={AiText} alt="Group Messaging" className='portfolio-img' />
 
           </div>
           <h3>Python Simulated AI Text Generator</h3>
@@ -51,7 +64,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={Monkey} alt="Infinite Monkey Theorem Simulator" />
+            <img src={Monkey} alt="Infinite Monkey Theorem Simulator" className='portfolio-img' />
 
           </div>
           <h3>Infinite Monkey Theorem Simulator</h3>
@@ -63,7 +76,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={BookTracker} alt="Book Tracker" />
+            <img src={BookTracker} alt="Book Tracker" className='portfolio-img'/>
 
           </div>
           <h3>Book Tracker</h3>
@@ -75,7 +88,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={TicTac} alt="Tic Tac Toe" />
+            <img src={TicTac} alt="Tic Tac Toe" className='portfolio-img'/>
 
           </div>
           <h3>Tic Tac Toe</h3>
@@ -87,7 +100,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
-            <img src={Messaging} alt="Group Messaging" />
+            <img src={Messaging} alt="Group Messaging" className='portfolio-img' />
 
           </div>
           <h3>Java Group Messaging Application</h3>
@@ -100,11 +113,11 @@ const Portfolio = () => {
           
       </div>
 
-      <div className='soon'>
+      {/* <div className='soon'>
             <h3>Stay Tuned</h3>
             <h5>Many more projects coming soon.</h5>
 
-      </div>
+      </div> */}
 
     </section>
   )

@@ -6,7 +6,7 @@
 }
 
 .overflowFix{
-    margin-bottom: 45rem;
+    margin-bottom: 80rem;
 }
 #gm{
     margin-bottom: 64px;
@@ -28,11 +28,12 @@
     background: rgba(0,0,0,0.8);
 }
 
-.portfolio_item-image{
+.portfolio-img{
+    width: 350px;
+    height: 200px;
     border-radius: 1.5rem;
-    overflow: hidden;
-}
 
+}
 .portfolio_item h3{
     margin: 1.2rem 0 0.5rem;
     
@@ -78,7 +79,7 @@
 
     .overflowFix{
         margin-top: 25rem;
-        margin-bottom: 115rem;
+        margin-bottom: 200rem;
     }
 
     .soon{

@@ -14,7 +14,10 @@ const About = () => {
         </div>
 
         <div className='about__content'>
-          <p>Hi i'm Jason, a freshman at the University of Florida studying information systems and pursuing a minor in computer science. Im very passionate about coding and business technology and I am currently learning Swift and web development using React. I plan on pursuing a certificate in AI.</p>
+          <p>Hello, I'm Jason, a freshman at the University of Florida studying computer science with a minor in business administration.
+             I have a deep passion for coding and the innovative ways technology can transform businesses. I'm also proficient in web design,
+              which enhances my ability to create impactful digital solutions. As I continue my education, I'm particularly excited about exploring artificial intelligence
+               and its applications in real-world scenarios. This interest is guiding my academic and professional journey as I seek to blend technology and business in meaningful ways.</p>
         </div>
       </div>
  

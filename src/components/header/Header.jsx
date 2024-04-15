@@ -40,7 +40,8 @@ const Header = () => {
       <div className='container header__container'>
         <h5>Hi, im</h5>
         <h1>Jason</h1>
-        <h5 className='text-light'>CS / Information Systems Student</h5>
+        <h5 className='text-light'>CS Student at the University of Florida</h5>
+        
         <CTA/>
         <HeaderSocials/> 
         <div className='scrolldown-s' style={{opacity: opac}}><h5>Scroll Down</h5>

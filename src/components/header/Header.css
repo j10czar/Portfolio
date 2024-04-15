@@ -48,6 +48,10 @@ header{
 }
 
 
+.linkedin{
+    height: fit-content;
+}
+
 
 .down_arrow{
     font-size: 2rem;

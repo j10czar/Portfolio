@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .overflowFix{
@@ -78,7 +80,7 @@
     }
 
     .overflowFix{
-        margin-top: 25rem;
+        margin-top: 50vh;
         margin-bottom: 200rem;
     }
 

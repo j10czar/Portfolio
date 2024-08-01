@@ -85,7 +85,9 @@
     text-align: center;
 
 }
-
+.more-skills{
+    margin-top: 3rem;
+}
 @media screen and (max-width: 1024px) {
     .experience_container{
         grid-template-columns: 1fr;

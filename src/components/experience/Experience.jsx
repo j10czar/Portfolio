@@ -43,6 +43,20 @@ const Experience = () => {
                 <small className='text-light'>Intermediate</small>
               </div>
             </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon'/>
+              <div>
+                <h4>TailwindCSS</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon'/>
+              <div>
+                <h4>TypeScript</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
 
           </div>
 
@@ -52,6 +66,13 @@ const Experience = () => {
         <div className="experience_backend">
           <h3>Backend Development</h3>
             <div className='experience_content'>
+            <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>Amazon AWS</h4>
+                  <small className='text-light'>Intermediate</small>
+                </div>               
+              </article>
               <article className='experience_details'>
                 <BsPatchCheckFill className='experience_details-icon'/>
                 <div>
@@ -63,6 +84,46 @@ const Experience = () => {
                 <BsPatchCheckFill className='experience_details-icon'/>
                 <div>
                   <h4>Python</h4>
+                  <small className='text-light'>Expert</small>
+
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>Docker</h4>
+                  <small className='text-light'>Beginner</small>
+
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>Node.js</h4>
+                  <small className='text-light'>Intermediate</small>
+
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>MySQL</h4>
+                  <small className='text-light'>Beginner</small>
+
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>Flask</h4>
+                  <small className='text-light'>Intermediate</small>
+
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>scikit-learn</h4>
                   <small className='text-light'>Intermediate</small>
 
                 </div>
@@ -70,15 +131,8 @@ const Experience = () => {
             </div>        
         </div>
       </div>
-      {/* <div className='extra-accomplishments'>
-        <div className='accomplishments'>
-          <h3 className='acc_header'>Accomplishments</h3>
-          <h4>•High placement in the Lockheed Martin Code Quest competition</h4>
-          <br />
-          <h4>•Competed in the University of Central Florida’s high school programming tournament </h4>
-        </div>  
-
-      </div> */}
+      <h5 className='more-skills'>More skills can be found on my resume</h5>
+    
       
     </section>
   )

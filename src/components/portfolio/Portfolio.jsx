@@ -8,6 +8,7 @@ import Nowe from '../../assets/nowe.png'
 import AiText from '../../assets/aitext.png'
 import gatormacros from '../../assets/gatormacros.png'
 import acm from '../../assets/acm.png'
+import advisor from '../../assets/advisor.png'
 
 const Portfolio = () => {
   return (
@@ -17,6 +18,17 @@ const Portfolio = () => {
 
 
       <div className="container portfolio_container">
+      <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={advisor} alt="AI Student Advisor" className='portfolio-img' />
+
+          </div>
+          <h3>AI Student Advisor</h3>
+          <p id='gm'>(Fall 2024)</p>
+          <div className='portfolio_item-cta'>
+             <a href="https://github.com/j10czar/AdvisorAI" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
+          </div>
+        </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={acm} alt="UF Association for Computing Machinery Overhaul" className='portfolio-img' />

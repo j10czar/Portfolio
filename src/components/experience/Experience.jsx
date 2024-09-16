@@ -127,14 +127,7 @@ const Experience = () => {
 
                 </div>  
               </article>
-              <article className='experience_details'>
-                <BsPatchCheckFill className='experience_details-icon'/>
-                <div>
-                  <h4>scikit-learn</h4>
-                  <small className='text-light'>Intermediate</small>
-
-                </div>
-              </article>
+          
             </div>        
         </div>
       </div>

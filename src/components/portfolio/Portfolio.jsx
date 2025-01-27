@@ -62,7 +62,7 @@ const Portfolio = () => {
           <h3>GatorMacros</h3>
           <p id='gm'>(Spring 2024)</p>
           <div className='portfolio_item-cta'>
-              <a href="https://gatormacros.com/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
+              <a href="https://j10czar.github.io/GatorMacros/" className='btn' target={'_blank'}>Website</a> {/* eslint-disable-line */}
           </div>
         </article>
       <article className='portfolio_item'>

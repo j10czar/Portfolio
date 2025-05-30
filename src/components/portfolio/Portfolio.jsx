@@ -9,7 +9,7 @@ import AiText from '../../assets/aitext.png'
 import gatormacros from '../../assets/gatormacros.png'
 import acm from '../../assets/acm.png'
 import advisor from '../../assets/advisor.png'
-import connect from "../../assets/connect.png"
+import connect from "../../assets/ACMConnect.png"
 
 
 const Portfolio = () => {
@@ -23,12 +23,13 @@ const Portfolio = () => {
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={connect} alt="ACM Connect" className='portfolio-img' />
+            
 
           </div>
           <h3>ACM Connect</h3>
-          <p id='gm'>(Fall 2024)</p>
+          <p id='gm'>(Spring 2025)</p>
           <div className='portfolio_item-cta'>
-             <a href="https://github.com/j10czar/opportunities-discord-bot"className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
+             <a href="https://acm-connect-website-git-feature-tandev-jasons-projects-bbe11fb6.vercel.app/?_vercel_share=SxskPkAvVxyuM4i84geIh7UhBQ6iRQfg" className='btn' target={'_blank'}>Website</a>
           </div>
         </article>
       <article className='portfolio_item'>

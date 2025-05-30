@@ -1,6 +1,10 @@
 header{
     height: 100vh;
-    padding-top: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -10,6 +14,10 @@ header{
     height: 100%;
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta{

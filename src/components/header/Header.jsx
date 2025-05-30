@@ -41,7 +41,7 @@ const Header = () => {
         <h5>Hi, im</h5>
         <h1>Jason</h1>
         <h5 className='text-light'>CS Student at the University of Florida</h5>
-        <h5 className='text-light'>Prev SWE Intern @ Integris Group</h5>
+        <h5 className='text-light'>Prev Intern @ Disney and Integris Group</h5>
         
         <CTA/>
         <HeaderSocials/> 

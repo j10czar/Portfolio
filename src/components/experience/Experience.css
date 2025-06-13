@@ -106,12 +106,4 @@
   .skill_tile{ gap: 0.3rem; }
 }
 
-/* =========================================================
-   2.  GLOBAL SECTION SPACING  – mobile only
-   =========================================================*/
-@media (max-width: 600px){
-  section:not(:last-of-type){
-      margin-bottom: 6rem;   /* add slack under every section */
-  }
-}
 

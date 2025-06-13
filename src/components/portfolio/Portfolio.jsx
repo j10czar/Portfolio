@@ -15,7 +15,7 @@ import sorting from "../../assets/sorting.png"
 
 const Portfolio = () => {
   return (
-    <section id='portfoilo' className='overflowFix section'>
+    <section id='portfoilo' className='section'>
       <h5>Some Recent Work</h5>
       <h2>My Projects</h2>
 

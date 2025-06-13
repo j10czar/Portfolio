@@ -115,15 +115,10 @@
   .about__top-row{grid-template-columns:1fr;}
   .about__companies{grid-template-columns:1fr;}
   .about__me{margin-bottom:2rem;}
-  section{
-    margin-bottom: 40rem;
-  }
 }
 
 @media (max-height: 1000px) {
-  section {
-    margin-bottom: 90rem; /* reduce spacing for smaller screens */
-  }
+  /* additional spacing tweaks removed */
 }
 
 

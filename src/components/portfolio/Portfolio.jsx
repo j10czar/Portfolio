@@ -10,16 +10,30 @@ import gatormacros from '../../assets/gatormacros.png'
 import acm from '../../assets/acm.png'
 import advisor from '../../assets/advisor.png'
 import connect from "../../assets/ACMConnect.png"
+import sorting from "../../assets/sorting.png"
 
 
 const Portfolio = () => {
   return (
-    <section id='portfoilo' className='overflowFix'>
+    <section id='portfoilo' className='section'>
       <h5>Some Recent Work</h5>
       <h2>My Projects</h2>
 
 
       <div className="container portfolio_container">
+        <article className='portfolio_item'>
+          <div className="portfolio_item-image">
+            <img src={sorting} alt="Sorting" className='portfolio-img' />
+            
+
+          </div>
+          <h3>Sorting Algorithm Visualizer</h3>
+          <p id='gm'>(Spring 2025)</p>
+          <div className='portfolio_item-cta'>
+             <a href="https://www.youtube.com/watch?v=Vpd3DNyJ0XE" className='btn' target={'_blank'}>Live Video Demo</a>
+              <a href="https://github.com/j10czar/dsa-p3-elevation-sort" className='alt-btn' target={'_blank'}>Github</a> {/* eslint-disable-line */}
+          </div>
+        </article>
       <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={connect} alt="ACM Connect" className='portfolio-img' />

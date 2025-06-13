@@ -1,91 +1,81 @@
+/* =====================  Portfolio Section  ===================== */
+
 .portfolio_container{
-    width: 75%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
+  width:75%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2.5rem;
+  align-items:start;              /* keeps card tops even            */
 }
 
-.overflowFix{
-    margin-bottom: 80rem;
-}
-#gm{
-    margin-bottom: 64px;
-}
-
-
+/* card wrapper -------------------------------------------------- */
 .portfolio_item{
-    backdrop-filter: blur(25px);
-    background: rgba(0,0,0,0.6);
-    padding: 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  backdrop-filter:blur(25px);
+  background:rgba(0,0,0,.6);
+  padding:1.2rem;
+  border-radius:2rem;
+  border:1px solid transparent;
+  transition:background .3s ease;
+}
+.portfolio_item:hover{background:rgba(0,0,0,.8);}
+
+/* uniform image frame ------------------------------------------- */
+.portfolio_item-image{
+  width:100%;
+  height:400px;                  /* choose any default height        */
+  overflow:hidden;
+  border-radius:1.5rem;
+}
+.portfolio_item-image img,
+.portfolio-img{                  /* keep existing class name working */
+  width:100%;
+  height:100%;
+  object-fit:cover;              /* ✨ crops without distortion       */
+  border-radius:inherit;
 }
 
-
-.portfolio_item:hover{
-    backdrop-filter: blur(50px);
-    background: rgba(0,0,0,0.8);
-}
-
-.portfolio-img{
-    width: 350px;
-    height: 200px;
-    border-radius: 1.5rem;
-
-}
-.portfolio_item h3{
-    margin: 1.2rem 0 0.5rem;
-    
-}
-
+/* text ----------------------------------------------------------- */
+.portfolio_item h3{margin:1.2rem 0 .5rem;}
 .portfolio_item>p{
-    color: var(--color-light);
-    font-weight: 500;
-
+  color:var(--color-light);
+  font-weight:500;
+  margin:0 0 1rem;
 }
 
-
+/* buttons -------------------------------------------------------- */
 .portfolio_item-cta{
-    display: flex;
-    gap: 1rem;
-
-    margin: 1rem;
-    margin-left: 0rem;
-
+  display:flex;
+  gap:1rem;
+  margin-left:0;
 }
 
+/* “coming soon” message ----------------------------------------- */
 .soon{
-    margin-top: 2rem;
-    text-align: center;
-    padding-top: 10rem;
+  margin-top:2rem;
+  text-align:center;
+  padding-top:10rem;
 }
 
-@media screen and (max-width: 1024px) {
-    .portfolio_container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
 
-    }
-
-   
+/* -------------  break-points ------------- */
+@media(max-width:1024px){
+  .portfolio_container{
+    grid-template-columns:1fr 1fr;
+    gap:1.2rem;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .portfolio_container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+@media(max-width:600px){
+  .portfolio_container{
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  .portfolio_item-image{height:160px;}    /* shorter thumbnails     */
 
-    .overflowFix{
-        margin-top: 50vh;
-        margin-bottom: 200rem;
-    }
+  .soon{
+    padding-top:1rem;
+    margin-top:1rem;
+  }
 
-    .soon{
-        padding-top: 1rem;
-        margin-top: 1rem;
-    }
 }

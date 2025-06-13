@@ -67,8 +67,8 @@ h1{
 }
 
 section{
-    height: 100vh;
-    margin-top: 8rem;
+    min-height: 100vh;
+    padding: 8rem 0;
 }
 
 section > h2, section > h5{
@@ -173,9 +173,9 @@ img{
     .container{
         width: var(--container-width-md);
     }
-    
+
     section{
-        margin-top: 6rem;
+        padding: 6rem 0;
     }
 }
 
@@ -185,9 +185,9 @@ img{
     .container{
         width: var(--container-width-sm);
     }
-    
-    section > h2{
-        margin-top: 2rem;
+
+    section{
+        padding: 4rem 0;
     }
 
     .ios-overflow{

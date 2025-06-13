@@ -57,8 +57,6 @@
   padding-top:10rem;
 }
 
-/* fix large section spacing used elsewhere */
-.overflowFix{margin-bottom:80rem;}
 
 /* -------------  break-points ------------- */
 @media(max-width:1024px){
@@ -75,10 +73,6 @@
   }
   .portfolio_item-image{height:160px;}    /* shorter thumbnails     */
 
-  .overflowFix{
-    margin-top:50vh;
-    margin-bottom:220rem;
-  }
   .soon{
     padding-top:1rem;
     margin-top:1rem;

@@ -1,129 +1,117 @@
-.experience_container{
-    display: grid;
-    width: 75%;
-    grid-template-columns: 1fr 1fr;
+/* container for the two columns */
+.experience_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* column card */
+.experience_column {
+  backdrop-filter: blur(25px);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  padding: 2.4rem 3rem;
+  transition: background 0.3s ease;
+}
+
+.experience_column:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.experience_column h3 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+/* grid that holds the tiles */
+.skill_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 1.4rem;
+}
+
+/* individual tile */
+.skill_tile {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 1.2rem;
+  backdrop-filter: blur(25px);
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.3s ease;
+}
+
+.skill_tile:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.skill_icon {
+  font-size: 2.2rem;
+  color: var(--color-white);
+}
+
+.skill_tile p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+/* footer note */
+.more_skills {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-light);
+}
+
+/* responsive tweaks */
+@media (max-width: 1024px) {
+  .experience_container {
+    grid-template-columns: 1fr;
     gap: 2rem;
-
-
+  }
 }
 
-.experience_container > div{
-    backdrop-filter: blur(25px);
-    background: rgba(0,0,0,0.6);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+/* =========================================================
+   1.  EXPERIENCE  —  better mobile behaviour
+   =========================================================*/
+
+/* iPhone-ish screens: stack the two column-cards but keep
+   EACH card’s tile-grid at two tiles per row so the height
+   stays reasonable. */
+@media (max-width: 600px){
+
+  /* card padding smaller */
+  .experience_column{
+      padding: 1.6rem 1.6rem;
+  }
+
+  /* tiles now two-across      110px min was too wide  */
+  .skill_grid{
+      grid-template-columns: repeat(2, minmax(90px, 1fr));
+      gap: 0.9rem;
+  }
+
+  /* smaller icons so tile height drops */
+  .skill_icon{ font-size: 1.6rem; }
+
+  /* tighten tile internal gap */
+  .skill_tile{ gap: 0.3rem; }
 }
 
-.exFix{
-    margin-bottom: 1rem;
+/* =========================================================
+   2.  GLOBAL SECTION SPACING  – mobile only
+   =========================================================*/
+@media (max-width: 600px){
+  section:not(:last-of-type){
+      margin-bottom: 6rem;   /* add slack under every section */
+  }
 }
 
-.experience_container > div:hover{
-    backdrop-filter: blur(50px);
-    background: rgba(0,0,0,0.8);
-}
-
-.experience_container > div h3{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.experience_content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-}
-
-.experience_details{
-    display: flex;
-    gap: 1rem;
-}
-
-.experience_details-icon{
-    margin-top: 6px;
-}
-
-.extra-accomplishments{
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    
-
-}
-
-.accomplishments{
-    backdrop-filter: blur(25px);
-    background: rgba(0,0,0,0.6);
-    padding: 2.4rem 2.4rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--color-light);
-}
-
-.accomplishments:hover{
-    backdrop-filter: blur(50px);
-    background: rgba(0,0,0,0.8);
-}
-
-.accomplishments{
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--color-light);
-
-}
-
-.acc_header{
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-
-}
-.more-skills{
-    margin-top: 3rem;
-}
-@media screen and (max-width: 1024px) {
-    .experience_container{
-        grid-template-columns: 1fr;
-    }
-
-    .experience_container > div{
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experience_content{
-        padding: 1rem;
-    }
-
-   
-}
-
-@media screen and (max-width: 600px) {
-
-    .experience_container{
-        gap: 1rem;
-    }
-
-    .experience_container > div{
-        width: 100%;
-        padding: 2rem 1rem;
-    }
-
-    .accomplishments{
-        margin: 1rem;
-    }
-
-    .exFix{
-        margin-top: 50vh;
-    }
-
-
-}

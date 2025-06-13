@@ -38,18 +38,15 @@ const About = () => {
               <div className="about__company-card">
                 <img
                   src={disneyLogo}
-                  alt="Disney Experiences"
+                  alt="Disney"
                   className="company-logo"
                 />
                 <div>
-                  <h3>Disney Experiences</h3>
+                  <h3>Disney</h3>
                   <h4 className="company-role">
                     Site Reliability Engineer Intern
                   </h4>
-                  <p className="company-desc">
-                    Improved system reliability and automation for teams across
-                    Disney Experiences.
-                  </p>
+  
                 </div>
               </div>
               <div className="about__company-card">
@@ -61,10 +58,6 @@ const About = () => {
                 <div>
                   <h3>Integris Group</h3>
                   <h4 className="company-role">Software Engineering Intern</h4>
-                  <p className="company-desc">
-                    Worked on full-stack AI projects. Built, trained, and
-                    deployed ML models to AWS.
-                  </p>
                 </div>
               </div>
               <div className="about__company-card">
@@ -76,9 +69,7 @@ const About = () => {
                 <div>
                   <h3>UF ACM</h3>
                   <h4 className="company-role">Lead Software Engineer</h4>
-                  <p>
-                    Led development of club platforms, mentored developers, and scaled ACM Connect to hundreds of monthly users.
-                  </p>
+
                 </div>
               </div>
             </div>

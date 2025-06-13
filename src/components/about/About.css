@@ -88,6 +88,24 @@
   color:var(--color-light);
   font-weight:500;
 }
+@media (min-width:1024px) and (max-width:1440px){
+
+  /* let the row grow a bit wider on these screens */
+  .about__top-row{
+      width: 70vw;            /* breathe out a little            */
+      max-width: none;        /* remove the 1700-px cap here      */
+      margin: 0 auto;         /* centre entire row                */
+
+      /* add internal centring so portrait+text sit symmetrically */
+      justify-content: center;
+      column-gap: 3rem;       /* a touch more space between cols  */
+  }
+}
+
+/* =======================================================
+   VERY LARGE DESKTOPS (>1440)   – unchanged 80 vw max 1700
+   SMALL (<1024)                – your existing stack rules
+   ======================================================= */
 
 /* ---------- responsive break-points ---------- */
 @media (max-width:1200px){
@@ -97,4 +115,15 @@
   .about__top-row{grid-template-columns:1fr;}
   .about__companies{grid-template-columns:1fr;}
   .about__me{margin-bottom:2rem;}
+  section{
+    margin-bottom: 40rem;
+  }
 }
+
+@media (max-height: 1000px) {
+  section {
+    margin-bottom: 90rem; /* reduce spacing for smaller screens */
+  }
+}
+
+

@@ -6,7 +6,22 @@
   <link rel="canonical" href="https://tenczar.dev/">
   <meta http-equiv="refresh" content="0; url=https://tenczar.dev/">
   <meta name="robots" content="noindex">
-  <script>window.location.replace("https://tenczar.dev/");</script>
+  <script>
+    // Unregister any leftover service workers from the old React app
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (let reg of regs) reg.unregister();
+      });
+    }
+    // Clear caches too
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (let name of names) caches.delete(name);
+      });
+    }
+    // Then redirect
+    window.location.replace("https://tenczar.dev/");
+  </script>
 </head>
 <body>
   <p>Redirecting to <a href="https://tenczar.dev/">tenczar.dev</a>…</p>
